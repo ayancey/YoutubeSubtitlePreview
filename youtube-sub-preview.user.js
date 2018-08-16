@@ -4,7 +4,7 @@
 // @version      0.2
 // @description  Know if a video has subtitles before you click.
 // @author       Alex Yancey
-// @match        ://www.youtube.com/*
+// @match        https://www.youtube.com/*
 // @grant        none
 // ==/UserScript==
 
