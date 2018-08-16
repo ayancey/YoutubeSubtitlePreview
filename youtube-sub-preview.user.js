@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Subtitle Preview
 // @namespace    https://github.com/ayancey/YoutubeSubtitlePreview
-// @version      0.1
+// @version      0.1.1
 // @description  Know if a video has subtitles before you click.
 // @author       Alex Yancey
 // @match        ://www.youtube.com/*
