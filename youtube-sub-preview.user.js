@@ -36,6 +36,7 @@ function youtube_subtitle_check() {
                     new_element.style.zIndex = "1000";
                     new_element.style.position = "absolute";
                     new_element.style.borderRadius = "8px";
+                    new_element.style.boxShadow = "2px 1px 2px black";
                     new_element.style.padding = "2px";
                     new_element.style.textAlign = "center";
                     new_element.style.left = "2px";
