@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Subtitle Preview
 // @namespace    https://github.com/ayancey/YoutubeSubtitlePreview
-// @version      0.2
+// @version      0.2.1
 // @description  Know if a video has subtitles before you click.
 // @author       Alex Yancey
 // @match        https://www.youtube.com/*
@@ -38,7 +38,7 @@ function youtube_subtitle_check() {
             xhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     let text = xhttp.responseText;
-                    if (text.includes('lang_code="' + TARGET_LANGUAGE + '"')) {
+                    if (text.includes('lang_code="' + TARGET_LANGUAGE + '"') || text.includes('lang_code="' + TARGET_LANGUAGE + '-')) {
                         // Sorry, this is ugly. I'm not good with JavaScript.
                         let new_element = document.createElement("div");
                         new_element.style.backgroundColor = "white";
